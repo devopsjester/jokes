@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Change ownership of the /app directory to the non-root user
-RUN chown -R user:user /app
+RUN chown -R me:me /app
 
 # Switch to non-root user
 USER me
